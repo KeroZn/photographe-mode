@@ -1,10 +1,12 @@
 
-body{
-    margin: 0;
+*{
     font-family: 'Kanit', sans-serif;
+    font-weight:900;
 }
 
-
+body {
+    margin: 0;
+}
 /*------------------------------------accueil---------------------------*/
 
 .container-col {
@@ -26,29 +28,34 @@ body{
     align-items: center;
     justify-content: center;
     font-weight: 400;
+    
 }
 .container-col .col-2 h1{
     font-size: 40px;
     font-weight: 300;
+    text-align: center;
+    
+    
 }
 
 .container-col .col-2 .contain-col-2{
     display: flex;
     flex-direction: column;
     align-items: center;   
+    
 }
 .container-col .col-2 .contain-col-2 .btn {
-box-shadow: inset 0 0 0 0 #54b3d6;
-  color: #54b3d6;
+box-shadow: inset 0 0 0 0 #e2b34c;
+  color: #e2b34c;
   padding: 0 .25rem;
   margin: 0 -.25rem;
-  transition: color 0.3s ease-in-out, box-shadow 1s ease-in-out;
-  margin-top: 20px;
-  font-size: 20px;
+  transition: color 0.3s ease-in-out, box-shadow 0.8s ease-in-out;
+  margin-top: 50px;
+  font-size: 25px;
 }
 
 .container-col .col-2 .contain-col-2 .btn:hover{
-  box-shadow: inset 200px 0 0 0 #54b3d6;
+  box-shadow: inset 200px 0 0 0 #e2b34c;
   color: #fff;
 
 }
@@ -58,69 +65,74 @@ box-shadow: inset 0 0 0 0 #54b3d6;
     transition: all 1s ease-in-out;
   }
   
-
-
 /*---------------------------accueil switch--------------------------------*/
 
-
-
-.contenue .navbar {
-    justify-content: end;
-    width: 100%;
-    height: 100px;
-    position: fixed;
-    z-index: 9999;
-    background-color: white;
-    opacity: 0.7;
-}
-
-.contenue .navbar .nav{
-    margin-right: 50px;
-    gap: 100px; 
-    border-bottom: 1px black solid; 
-
-}
-
-.contenue .navbar .nav li a {
-    color:black;
-}
-
-article  {  
-    position: absolute;
-    margin-top: 100px;
-    background-color: blueviolet;
-    width: 60%;
-    margin-left: 20%;
-}
-
-
-/*-------------------------Carousel----------------------------*/
-
-article .contain-carousel .carousel-item{
-    transition: transform 1.5s ease-in-out;
-}
-
-article .contain-carousel .carousel-item img {
-    width: 100%;
-    height: 90vh;
-    object-fit: cover;
-}
-.accueil-contenue .contain-carousel .tiret-contain{
+header .container-name {
     display: flex;
-    position: absolute;
-  
-    height: 90vh;
-    z-index: 1;
-    align-items: center;
-    margin-left: 80%;
+    justify-content: center;
+    padding-top: 20px;
 }
 
-.accueil-contenue .contain-carousel .tiret { 
+header .container-name .name {
+    text-align: center;
+}
+
+header .container-name .name p{
+    letter-spacing: 10px;
+    font-size: 12px;
+}
+
+header .container-name .name h1{
     font-weight: bold;
-    font-size: 13px;    
+    font-size: 50px;
 }
 
+header .navigation .nav-link{
+    color: black;
+}
 
+header .navigation {
+    margin-top: 30px;
+}
 
+header .navigation .nav {
+    gap: 30px;
+}
 
+header {
+    height: 200px;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 2px 10px #bebdb9;
+    z-index: 1;
+    background-color: white;
+}
+
+/*---------------les phtoto--------------------------*/
+
+article  {
+    position: absolute;
+    margin-top: 210px;
+    width: 100%;
+}
+
+article .container-photo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px; 
+}
+
+article .container-photo img {
+    width: 500px;
+    height: 600px;
+    object-fit: cover;
+    transition: transform 0.2s ease-out ;
+}
+
+article .container-photo img:hover{
+    opacity: 0.95;
+    transform: scale(1.1);
+    
+}
 

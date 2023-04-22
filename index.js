@@ -14,11 +14,11 @@ btn.addEventListener('click', () => {
   setTimeout(() => {
     accueilSection.style.display = 'none';
     accueilswitchSection.style.opacity = 1;
-  }, 1000);
+  }, 900);
   
   // Supprimer la classe "transition" après un délai de 0,5 seconde pour que la transition ait lieu
   setTimeout(() => {
     accueilSection.classList.remove('transition');
     accueilswitchSection.classList.remove('transition');
-  }, 2000);
+  }, 1900);
 });
