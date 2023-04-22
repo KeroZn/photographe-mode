@@ -134,3 +134,49 @@ article .container-photo img:hover{
     opacity: 0.95;
     transform: scale(1.1);   
 }
+
+/* Overlay */
+.mfp-bg {
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+
+/*---------------------fondu carousel------------------------*/
+
+/* Container */
+.mfp-wrap {
+    opacity: 0;
+    transition: all 0.8s ease-out;
+}
+
+/* Image */
+.mfp-figure {
+    opacity: 1;
+    transition: all 1s ease-out;
+}
+
+/* Fade-in effect when opening */
+.mfp-bg.mfp-ready {
+    opacity: 0.8;
+}
+
+.mfp-wrap.mfp-ready {
+    opacity: 1;
+}
+
+.mfp-figure.mfp-ready {
+    opacity: 1;
+}
+
+/* Fade-out effect when closing */
+.mfp-bg.mfp-removing, .mfp-bg.mfp-loading {
+    opacity: 0;
+}
+
+.mfp-wrap.mfp-removing, .mfp-wrap.mfp-loading {
+    opacity: 0;
+}
+
+.mfp-figure.mfp-removing, .mfp-figure.mfp-loading {
+    opacity: 0;
+}

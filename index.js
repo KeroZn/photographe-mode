@@ -29,10 +29,12 @@ btn.addEventListener('click', () => {
 
 $(document).ready(function() {
   $('.container-photo').magnificPopup({
-      delegate: 'a',
-      type: 'image',
-      gallery:{
-          enabled:true
-      }
+    delegate: 'a',
+    type: 'image',
+    gallery: {
+      enabled: true
+    },
+    removalDelay: 300,
+    mainClass: 'mfp-fade'
   });
 });
