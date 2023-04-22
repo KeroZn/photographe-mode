@@ -4,6 +4,9 @@ body{
     font-family: 'Kanit', sans-serif;
 }
 
+
+/*------------------------------------accueil---------------------------*/
+
 .container-col {
     display: flex;
 }
@@ -35,9 +38,88 @@ body{
     align-items: center;   
 }
 .container-col .col-2 .contain-col-2 .btn {
-    border: 1px solid black;
-    margin-top: 30px;
+box-shadow: inset 0 0 0 0 #54b3d6;
+  color: #54b3d6;
+  padding: 0 .25rem;
+  margin: 0 -.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 1s ease-in-out;
+  margin-top: 20px;
+  font-size: 20px;
 }
+
+.container-col .col-2 .contain-col-2 .btn:hover{
+  box-shadow: inset 200px 0 0 0 #54b3d6;
+  color: #fff;
+
+}
+
+/* Ajouter une transition sur les éléments que vous voulez animer */
+.transition {
+    transition: all 1s ease-in-out;
+  }
+  
+
+
+/*---------------------------accueil switch--------------------------------*/
+
+
+
+.contenue .navbar {
+    justify-content: end;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 9999;
+    background-color: white;
+    opacity: 0.7;
+}
+
+.contenue .navbar .nav{
+    margin-right: 50px;
+    gap: 100px; 
+    border-bottom: 1px black solid; 
+
+}
+
+.contenue .navbar .nav li a {
+    color:black;
+}
+
+article  {  
+    position: absolute;
+    margin-top: 100px;
+    background-color: blueviolet;
+    width: 60%;
+    margin-left: 20%;
+}
+
+
+/*-------------------------Carousel----------------------------*/
+
+article .contain-carousel .carousel-item{
+    transition: transform 1.5s ease-in-out;
+}
+
+article .contain-carousel .carousel-item img {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+}
+.accueil-contenue .contain-carousel .tiret-contain{
+    display: flex;
+    position: absolute;
+  
+    height: 90vh;
+    z-index: 1;
+    align-items: center;
+    margin-left: 80%;
+}
+
+.accueil-contenue .contain-carousel .tiret { 
+    font-weight: bold;
+    font-size: 13px;    
+}
+
 
 
 
