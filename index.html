@@ -74,42 +74,55 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="#">Evénement</a>
-                        </li
-                        <li> class="nav-item">
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link " href="#">Noir & Blanc</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="#">A Propos</a>
                         </li>
-                        <li> class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link " href="#">Contact</a>
                         </li>
                     </ul>
                 </nav>
             </header>
             <article>
-                <div class="container-photo" id="carousel">
-                    <a href="photo\☆ Alternative Purple ☆彡 _ Photos.jpg" class="link-pht" target=""><img src="photo\☆ Alternative Purple ☆彡 _ Photos.jpg" alt=""></a>
-                    <a href="photo\c20dc58b6ff41381845afa2176475e9d.jpg" class="link-pht" target="_blank"><img src="photo\c20dc58b6ff41381845afa2176475e9d.jpg" alt=""></a>
-                    <a href="photo\ca14cf49-7022-4169-b97d-d983ae5f4ba3.jpg" class="link-pht" target="_blank"><img src="photo\ca14cf49-7022-4169-b97d-d983ae5f4ba3.jpg" alt=""></a>
-                    <a href="photo\Creative Portrait Photography, Grunge Glam Photography, Smokey Black and White Portrait.png" class="link-pht" target="_blank"><img src="photo\Creative Portrait Photography, Grunge Glam Photography, Smokey Black and White Portrait.png" alt=""></a>
-                    <a href="photo\e4173d97420609.5ec4aee32b4a6.jpg" class="link-pht" target="_blank"><img src="photo\e4173d97420609.5ec4aee32b4a6.jpg" alt=""></a>
-                    <a href="photo\hey don't play cello you look so yellow.jpg" class="link-pht" target="_blank"><img src="photo\hey don't play cello you look so yellow.jpg" alt=""></a>
-                    <a href="photo\P34124.jpg" class="link-pht" target="_blank"><img src="photo\P34124.jpg" alt=""></a>
-                    <a href="photo\pensive-asian-woman-black-hat-looking-camera-studio-shot-glamorous-japanese-model-isolated-beige-background_197531-14544.jpg" class="link-pht" target="_blank"><img src="photo\pensive-asian-woman-black-hat-looking-camera-studio-shot-glamorous-japanese-model-isolated-beige-background_197531-14544.jpg" alt=""></a>
-                    <a href="photo\unnamed.jpg" class="link-pht" target="_blank"><img src="photo\unnamed.jpg" alt=""></a>
-                    <a href="photo\World in Black and white.jpg" class="link-pht" target="_blank"><img src="photo\World in Black and white.jpg" alt=""></a>
-                    <a href="photo\20210619-sonia-et-roderau-0085_3_274011-165814883587377.jpeg" class="link-pht" target="_blank"><img src="photo\20210619-sonia-et-roderau-0085_3_274011-165814883587377.jpeg" alt=""></a>
-                    <a href="photo\pexels-photo-1456613.jpg" class="link-pht" target="_blank"><img src="photo\pexels-photo-1456613.jpg" alt=""></a>
-                    <a href="photo\téléchargement (1).jpg" class="link-pht" target="_blank"><img src="photo\téléchargement (1).jpg" alt=""></a>
-                    <a href="photo\Exhale by Gracie Bialecki.jpg" class="link-pht" target="_blank"><img src="photo\Exhale by Gracie Bialecki.jpg" alt=""></a>
-                    <a href="photo\stock-photo-4426346.jpg" class="link-pht" target="_blank"><img src="photo\stock-photo-4426346.jpg" alt=""></a>
-                    <a href="photo\téléchargement (2).jpg" class="link-pht" target="_blank"><img src="photo\téléchargement (2).jpg" alt=""></a>
-                    <a href="photo\mariage_.jpg" class="link-pht" target="_blank"><img src="photo\mariage_.jpg" alt=""></a>
-                    <a href="photo\téléchargement (3).jpg" class="link-pht" target="_blank"><img src="photo\téléchargement (3).jpg" alt=""></a>
-                    <a href="photo\20 Enchanting Wedding Photo Ideas for Woodland Brides - Tulle & Chantilly Wedding Blog.jpg" class="link-pht" target="_blank"><img src="photo\20 Enchanting Wedding Photo Ideas for Woodland Brides - Tulle & Chantilly Wedding Blog.jpg" alt=""></a>
-                    <a href="photo\photographe-mariage-auvergne-aynaphotos-014.jpg" class="link-pht" target="_blank"><img src="photo\photographe-mariage-auvergne-aynaphotos-014.jpg" alt=""></a>
-                </div>
+                <div class="container-photo">
+                    <!------------------------------------Script js pour simplifier le nombre de photo----------------------------->
+                    <script>
+                      const photos = [      
+                        "photo\\☆ Alternative Purple ☆彡 _ Photos.jpg",
+                        "photo\\c20dc58b6ff41381845afa2176475e9d.jpg",      
+                        "photo\\ca14cf49-7022-4169-b97d-d983ae5f4ba3.jpg",      
+                        "photo\\Creative Portrait Photography, Grunge Glam Photography, Smokey Black and White Portrait.png",      
+                        "photo\\e4173d97420609.5ec4aee32b4a6.jpg",      
+                        "photo\\hey don't play cello you look so yellow.jpg",      
+                        "photo\\P34124.jpg",      
+                        "photo\\pensive-asian-woman-black-hat-looking-camera-studio-shot-glamorous-japanese-model-isolated-beige-background_197531-14544.jpg",      
+                        "photo\\unnamed.jpg",      
+                        "photo\\World in Black and white.jpg",      
+                        "photo\\20210619-sonia-et-roderau-0085_3_274011-165814883587377.jpeg",      
+                        "photo\\pexels-photo-1456613.jpg",      
+                        "photo\\téléchargement (1).jpg",      
+                        "photo\\Exhale by Gracie Bialecki.jpg",      
+                        "photo\\stock-photo-4426346.jpg",      
+                        "photo\\téléchargement (2).jpg",      
+                        "photo\\mariage_.jpg",      
+                        "photo\\téléchargement (3).jpg",      
+                        "photo\\20 Enchanting Wedding Photo Ideas for Woodland Brides - Tulle & Chantilly Wedding Blog.jpg",      
+                        "photo\\photographe-mariage-auvergne-aynaphotos-014.jpg",   
+                     ];
+                      for (let i = 0; i < photos.length; i++) {
+                        document.write(
+                          `<a href="${photos[i]}" class="link-pht"><img src="${photos[i]}" alt="impossible d'afficher la photo"></a>`
+                        );
+                      }
+                    </script>
+
+                    <!------------------------------------Fin du script------------------------------------------>
+                  </div>
+
             </article>
         </section>
 
