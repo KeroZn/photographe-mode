@@ -22,3 +22,17 @@ btn.addEventListener('click', () => {
     accueilswitchSection.classList.remove('transition');
   }, 1900);
 });
+
+
+
+//------------------------Carousel---------------------------------------//
+
+$(document).ready(function() {
+  $('.container-photo').magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      gallery:{
+          enabled:true
+      }
+  });
+});
