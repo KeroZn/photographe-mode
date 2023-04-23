@@ -26,7 +26,7 @@
 
         <!-------------------------------Accueil----------------------------------------->
 
-        <section class="container-col" id="accueil">
+        <section class="container-col" id="accueil" hidden>
             <div class="col-1">
                 <img src="photo\c20dc58b6ff41381845afa2176475e9d.jpg" alt="photo">
             </div>
@@ -46,7 +46,7 @@
             <!------------------------------------Accueil switch------------------------------------------>
     
 
-        <section class="contenue" id="accueil-switch" hidden>
+        <section class="contenue" id="accueil-switch" >
             <header>
                 <div class="container-name">
                     <div class="name">
@@ -89,29 +89,91 @@
             </header>
             <article>
                 <div class="container-photo mfp-fade">
+
                     <!------------------------------------Script js pour simplifier le nombre de photo----------------------------->
+
                     <script>
                       const photos = [      
-                        "photo\\☆ Alternative Purple ☆彡 _ Photos.jpg",
-                        "photo\\c20dc58b6ff41381845afa2176475e9d.jpg",      
-                        "photo\\ca14cf49-7022-4169-b97d-d983ae5f4ba3.jpg",      
-                        "photo\\Creative Portrait Photography, Grunge Glam Photography, Smokey Black and White Portrait.png",      
-                        "photo\\e4173d97420609.5ec4aee32b4a6.jpg",      
-                        "photo\\hey don't play cello you look so yellow.jpg",      
-                        "photo\\P34124.jpg",      
-                        "photo\\pensive-asian-woman-black-hat-looking-camera-studio-shot-glamorous-japanese-model-isolated-beige-background_197531-14544.jpg",      
-                        "photo\\unnamed.jpg",      
-                        "photo\\World in Black and white.jpg",      
-                        "photo\\20210619-sonia-et-roderau-0085_3_274011-165814883587377.jpeg",      
-                        "photo\\pexels-photo-1456613.jpg",      
-                        "photo\\téléchargement (1).jpg",      
-                        "photo\\Exhale by Gracie Bialecki.jpg",      
-                        "photo\\stock-photo-4426346.jpg",      
-                        "photo\\téléchargement (2).jpg",      
-                        "photo\\mariage_.jpg",      
-                        "photo\\téléchargement (3).jpg",      
-                        "photo\\20 Enchanting Wedding Photo Ideas for Woodland Brides - Tulle & Chantilly Wedding Blog.jpg",      
-                        "photo\\photographe-mariage-auvergne-aynaphotos-014.jpg",   
+                        {
+                            src: "photo\\☆ Alternative Purple ☆彡 _ Photos.jpg",
+                            tags: ["portrait","studio","portfolio"]
+                        },
+                        {
+                            src:"photo\\c20dc58b6ff41381845afa2176475e9d.jpg",
+                            tags: ["portrait", "studio", "portfolio"]
+                        } , 
+                        {
+                            src: "photo\\ca14cf49-7022-4169-b97d-d983ae5f4ba3.jpg",
+                            tags: [ "noir&blanc","portfolio"]    
+                        }  ,
+                        {
+                            src:"photo\\Creative Portrait Photography, Grunge Glam Photography, Smokey Black and White Portrait.png",
+                            tags: [ "noir&blanc", "portrait", "portfolio"]  
+                        },
+                        {
+                            src:"photo\\e4173d97420609.5ec4aee32b4a6.jpg",
+                            tags: [ "noir&blanc", "street", "portfolio"]
+                        } ,
+                        {
+                            src:"photo\\hey don't play cello you look so yellow.jpg", 
+                            tags: ["noir&blanc", "portrait", "portfolio", "studio"]
+                        },
+                        {
+                            src:"photo\\P34124.jpg", 
+                            tags:["noir&blanc", "street", "portfolio"]
+                        }  ,  
+                        {
+                            src:"photo\\pensive-asian-woman-black-hat-looking-camera-studio-shot-glamorous-japanese-model-isolated-beige-background_197531-14544.jpg", 
+                            tags: [, "studio", "portfolio"]
+                        } ,   
+                        {
+                            src:"photo\\unnamed.jpg",
+                            tags:["studio", "portfolio"]
+                        },
+                        {
+                            src:"photo\\World in Black and white.jpg",
+                            tags: ["portrait","noir&blanc","portfolio","studio"]
+                        },
+                        {
+                            src:"photo\\20210619-sonia-et-roderau-0085_3_274011-165814883587377.jpeg", 
+                            tags:[ "evenement","portfolio"]
+                        }  ,   
+                        {
+                            src: "photo\\pexels-photo-1456613.jpg",
+                            tags:[ "evenement", "portfolio"]
+                        },
+                        {
+                            src: "photo\\téléchargement (1).jpg",
+                            tags:["portfolio"]
+                        },    
+                        {
+                            src:"photo\\Exhale by Gracie Bialecki.jpg",
+                            tags: ["portfolio"]
+                        } ,     
+                        {
+                            src: "photo\\stock-photo-4426346.jpg", 
+                            tags: ["noir&blanc", "street", "portfolio"]
+                        } ,    
+                        {
+                            src:"photo\\téléchargement (2).jpg", 
+                            tags: ["noir&blanc", "studio", "portfolio"]
+                        } ,    
+                        {
+                            src: "photo\\mariage_.jpg",
+                            tags: ["evenement", "portfolio"]
+                        }   ,
+                        {
+                            src:"photo\\téléchargement (3).jpg",
+                            tags: ["portrait", "portfolio"]
+                        } ,  
+                        {
+                            src: "photo\\20 Enchanting Wedding Photo Ideas for Woodland Brides - Tulle & Chantilly Wedding Blog.jpg",
+                            tags: [ "portfolio"]
+                        }    ,
+                        {
+                            src:  "photo\\photographe-mariage-auvergne-aynaphotos-014.jpg",   
+                            tags: ["noir&blanc",  "portfolio", "evenement"]
+                        } 
                      ];
                       for (let i = 0; i < photos.length; i++) {
                         document.write(
@@ -121,7 +183,8 @@
                     </script>
 
                     <!------------------------------------Fin du script------------------------------------------>
-                  </div>
+
+                </div>
 
             </article>
         </section>
