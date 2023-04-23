@@ -175,11 +175,13 @@
                             tags: ["noir&blanc",  "portfolio", "evenement"]
                         } 
                      ];
-                      for (let i = 0; i < photos.length; i++) {
-                        document.write(
-                          `<a href="${photos[i]}" class="link-pht"><img src="${photos[i]}" alt="impossible d'afficher la photo"></a>`
-                        );
-                      }
+                     for (let i = 0; i < photos.length; i++) {
+    const { src, tags } = photos[i];
+    const tagString = tags.join(" "); // Convertir les tags en une chaîne séparée par des espaces
+    document.write(
+      `<a href="${src}" class="link-pht"><img src="${src}" alt="impossible d'afficher la photo" data-tags="${tagString}"></a>`
+    );
+  }
                     </script>
 
                     <!------------------------------------Fin du script------------------------------------------>
