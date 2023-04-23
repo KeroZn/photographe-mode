@@ -61,22 +61,22 @@
                 <nav class="navigation">
                     <ul class="nav justify-content-center">
                         <li class="nav-item">
-                        <a class="nav-link " href="#">Toute les photos</a>
+                        <a class="nav-link " href="#portfolio">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">Studio</a>
+                        <a class="nav-link" href="#studio">Studio</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">Street</a>
+                        <a class="nav-link" href="#street">Street</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link " href="#">Portrait</a>
+                        <a class="nav-link " href="#portrait">Portrait</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#">Evénement</a>
+                            <a class="nav-link " href="#evenement">Evénement</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#">Noir & Blanc</a>
+                            <a class="nav-link " href="#noir&blanc">Noir & Blanc</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="#">A Propos</a>
@@ -90,9 +90,10 @@
             <article>
                 <div class="container-photo mfp-fade">
 
-                    <!------------------------------------Script js pour simplifier le nombre de photo----------------------------->
+                    <!------------------------------------Script js pour photo----------------------------->
 
                     <script>
+                        
                       const photos = [      
                         {
                             src: "photo\\☆ Alternative Purple ☆彡 _ Photos.jpg",
@@ -176,12 +177,12 @@
                         } 
                      ];
                      for (let i = 0; i < photos.length; i++) {
-    const { src, tags } = photos[i];
-    const tagString = tags.join(" "); // Convertir les tags en une chaîne séparée par des espaces
-    document.write(
-      `<a href="${src}" class="link-pht"><img src="${src}" alt="impossible d'afficher la photo" data-tags="${tagString}"></a>`
-    );
-  }
+                        const { src, tags } = photos[i];
+                        const tagString = tags.join(" "); // Convertir les tags en une chaîne séparée par des espaces
+                         document.write(`<a href="${src}" class="link-pht"><img src="${src}" alt="impossible d'afficher la photo" data-tags="${tagString}"></a>`
+                         );
+                    }
+                  
                     </script>
 
                     <!------------------------------------Fin du script------------------------------------------>

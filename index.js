@@ -38,3 +38,25 @@ $(document).ready(function() {
     mainClass: 'mfp-fade'
   });
 });
+
+//---------------------------triage des phtotos----------------------------------//
+
+
+const navLinks = document.querySelectorAll(".navigation a");
+
+navLinks.forEach(link => {
+  link.addEventListener("click", function(event) {
+    event.preventDefault();
+
+    // Obtenez le tag de la photo à afficher en fonction du lien cliqué
+    const tag = link.getAttribute("href").slice(1);
+
+    // Masquer toutes les photos
+    const photos = document.querySelectorAll(".container-photo img");
+    photos.forEach(photo => photo.style.display = "none");
+
+    // Afficher les photos avec le tag correspondant
+    const filteredPhotos = document.querySelectorAll(`[data-tags*="${tag}"]`);
+    filteredPhotos.forEach(photo => photo.style.display = "block");
+  });
+});
