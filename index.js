@@ -24,7 +24,6 @@ btn.addEventListener('click', () => {
 });
 
 
-
 //------------------------Carousel---------------------------------------//
 
 $(document).ready(function() {
@@ -37,12 +36,35 @@ $(document).ready(function() {
     removalDelay: 300,
     mainClass: 'mfp-fade'
   });
+
+  // Add event listener to navigation links
+  $('.categorie-pht').on('click', function() {
+    // Remove active class from all links
+    $('.categorie-pht').removeClass('active');
+    // Add active class to clicked link
+    $(this).addClass('active');
+    // Get active tag
+    const activeTag = $(this).text().toLowerCase().replace(/\s/g, '');
+    // Filter photos by active tag
+    const filteredPhotos = photos.filter(photo => photo.tags.includes(activeTag));
+    // Clear existing gallery
+    $('.container-photo').html('');
+    // Create new gallery with filtered photos
+    for (let i = 0; i < filteredPhotos.length; i++) {
+      const { src } = filteredPhotos[i];
+      const item = $('<a>').attr('href', src).append($('<img>').attr('src', src));
+      $('.container-photo').append(item);
+    }
+    // Update magnificPopup instance
+    $.magnificPopup.instance.updateItemHTML($('.container-photo').html());
+  });
 });
+
 
 //---------------------------triage des phtotos----------------------------------//
 
 
-const navLinks = document.querySelectorAll(".navigation a");
+const navLinks = document.querySelectorAll(".navigation .categorie-pht");
 
 navLinks.forEach(link => {
   link.addEventListener("click", function(event) {
@@ -58,5 +80,8 @@ navLinks.forEach(link => {
     // Afficher les photos avec le tag correspondant
     const filteredPhotos = document.querySelectorAll(`[data-tags*="${tag}"]`);
     filteredPhotos.forEach(photo => photo.style.display = "block");
+
   });
 });
+
+
