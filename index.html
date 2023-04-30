@@ -8,6 +8,7 @@
 
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,7 +59,7 @@
                         </p>
                     </div>
                 </div>
-                <nav class="navigation">
+                <nav class="navigation" >
                     <ul class="nav justify-content-center">
                         <li class="nav-item">
                         <a class="nav-link categorie-pht active" href="#portfolio">Portfolio</a>
@@ -73,7 +74,7 @@
                         <a class="nav-link categorie-pht " href="#portrait">Portrait</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link categorie-pht " href="#evenement">Evénement</a>
+                            <a class="nav-link categorie-pht " href="#evenement">Evènement</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link categorie-pht " href="#noir&blanc">Noir & Blanc</a>
@@ -88,7 +89,7 @@
                 </nav>
             </header>
             <article>
-                <div class="container-photo mfp-fade">
+                <div class="container-photo mfp-fade" hidden>
 
                     <!------------------------------------Script js pour photo----------------------------->
 
@@ -137,11 +138,11 @@
                         },
                         {
                             src:"photo\\20210619-sonia-et-roderau-0085_3_274011-165814883587377.jpeg", 
-                            tags:[ "evenement","portfolio"]
+                            tags:[ "evènement","portfolio"]
                         }  ,   
                         {
                             src: "photo\\pexels-photo-1456613.jpg",
-                            tags:[ "evenement", "portfolio"]
+                            tags:[ "evènement", "portfolio"]
                         },
                         {
                             src: "photo\\téléchargement (1).jpg",
@@ -161,7 +162,7 @@
                         } ,    
                         {
                             src: "photo\\mariage_.jpg",
-                            tags: ["evenement", "portfolio"]
+                            tags: ["evènement", "portfolio"]
                         }   ,
                         {
                             src:"photo\\téléchargement (3).jpg",
@@ -173,7 +174,7 @@
                         }    ,
                         {
                             src:  "photo\\photographe-mariage-auvergne-aynaphotos-014.jpg",   
-                            tags: ["noir&blanc",  "portfolio", "evenement"]
+                            tags: ["noir&blanc",  "portfolio", "evènement"]
                         } 
                      ];
                      for (let i = 0; i < photos.length; i++) {
@@ -187,6 +188,92 @@
 
                     <!------------------------------------Fin du script------------------------------------------>
 
+                </div>
+
+                    <!---------------------------------------A propos--------------------------------------------->
+
+                <div class="container-a-propos" hidden>
+                    <div class="a-propos">
+                        <img src="photo\xphotographe.jpg.pagespeed.ic.qJUnzHUWx0.jpg" alt="impossible d'afficher la photo">
+                        <div class="description-texte">
+                            <h2>
+                                Qui je suis ?
+                            </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet. Eos quos ducimus aut accusamus deleniti vel impedit atque et omnis rerum cum voluptatum 
+                                culpa eos iste ratione. Rem sint eligendi 33 placeat galisum eos harum Quis est dolorem dolor ea saepe incidunt? 
+                                Ut porro inventore id culpa porro quo omnis vitae rem voluptatem eveniet est voluptatem adipisci nam nihil autem 
+                                  vel corrupti explicabo? Quo adipisci inventore aut quam harum est asperiores minus ut porro saepe.<br>
+
+                                Aut adipisci placeat ab nostrum dolorem At officia nesciunt qui asperiores deleniti ut quidem laboriosam? 
+                                Aut sequi veritatis 33 minima expedita ut dignissimos alias sed dolor pariatur et ipsum nesciunt et consequatur dolorem.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="travail">
+                        <img src="photo\touriste-positive-appareil-photo-sac-dos-voyage_613910-7148.jpg" alt="">
+                        <div class="comment">
+                            <h2>
+                                Déroulement d'une séance et tarif.
+                            </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet. Eos quos ducimus aut accusamus deleniti vel impedit atque et omnis rerum cum voluptatum 
+                                    culpa eos iste ratione. Rem sint eligendi 33 placeat galisum eos harum Quis est dolorem dolor ea saepe incidunt? 
+                                    Ut porro inventore id culpa porro quo omnis vitae rem voluptatem eveniet est voluptatem adipisci nam nihil autem 
+                                    vel corrupti explicabo? Quo adipisci inventore aut quam harum est asperiores minus ut porro saepe.<br>
+
+                                    Aut adipisci placeat ab nostrum dolorem At officia nesciunt qui asperiores deleniti ut quidem laboriosam? 
+                                    Aut sequi veritatis 33 minima expedita ut dignissimos alias sed dolor pariatur et ipsum nesciunt et consequatur dolorem.
+                            </p>
+
+                            <div class="bouton-contact">
+                                <button class="btn-contact btn">
+                                Contact
+                                </button>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                </div>
+            
+                <!------------------------------------Contact------------------------------------>
+
+                <div class="contact">
+                    <div class="contact-container">
+                        <h2>
+                            N'HESITEZ PAS A ME CONTACTER
+                        </h2>
+                        <p>
+                            Je suis à votre disposition pour plus de renseignement. <br> A trés bientôt <br> Kelly.
+                        </p>
+                        <div class="contact-list">
+                            <div class="contact-item ">
+                                <div class="icon">
+                                    <i class="bi bi-telephone-fill"></i>
+                                </div>
+                                <h4>Téléphone</h4>
+                                <p>0612 34 56 78</p>
+                            </div>
+                            
+                            <div class="contact-item ">
+                                <div class="icon">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                </div>
+                                <h4>Adresse</h4>
+                                <p>1 rue de l'imagination, <br>75000 Paris</p>
+                            </div>
+
+                            <div class="contact-item ">
+                                <div class="icon">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </div>
+                                <h4>Mail</h4>
+                                <p>Kelly.p@nuage.fr</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </article>
         </section>
@@ -205,4 +292,4 @@
         <script src="bootstrap.min.js"></script>
         <script src="jquery.magnific-popup.min.js"></script>
     </body>
-</html>
+</html
