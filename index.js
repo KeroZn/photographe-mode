@@ -1,9 +1,12 @@
+//--------------------Transition accueuil-----------------------//
+
+
 const btn = document.querySelector('.btn');
 const accueilSection = document.getElementById('accueil');
 const accueilswitchSection = document.getElementById('accueil-switch');
 
 btn.addEventListener('click', () => {
-  // Ajouter la classe "transition" aux éléments que vous voulez animer
+  // Ajouter la classe "transition" 
   accueilSection.classList.add('transition');
   accueilswitchSection.classList.add('transition');
   
@@ -33,23 +36,23 @@ $(document).ready(function() {
     gallery: {
       enabled: true
     },
-    removalDelay: 300,
+    removalDelay: 400,
     mainClass: 'mfp-fade'
   });
 
-  // Add event listener to navigation links
+  // Ajout evenement au lien
   $('.categorie-pht').on('click', function() {
-    // Remove active class from all links
+    // suprime class active des lien
     $('.categorie-pht').removeClass('active');
-    // Add active class to clicked link
+    // ajout class active sur le lien cliqué
     $(this).addClass('active');
-    // Get active tag
+    // recupere le tag active
     const activeTag = $(this).text().toLowerCase().replace(/\s/g, '');
-    // Filter photos by active tag
+    // filtre les photo avec la class active
     const filteredPhotos = photos.filter(photo => photo.tags.includes(activeTag));
-    // Clear existing gallery
+    // supprime les photo de la galerie
     $('.container-photo').html('');
-    // Create new gallery with filtered photos
+    // crée une nouvelle galerie avec les photo du filtre
     for (let i = 0; i < filteredPhotos.length; i++) {
       const { src } = filteredPhotos[i];
       const item = $('<a>').attr('href', src).append($('<img>').attr('src', src));
@@ -84,4 +87,6 @@ navLinks.forEach(link => {
   });
 });
 
+
+/*-------------------------Footer-----------------------*/
 
