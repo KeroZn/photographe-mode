@@ -27,7 +27,7 @@
 
         <!-------------------------------Accueil----------------------------------------->
 
-        <section class="container-col" id="accueil" hidden>
+        <section class="container-col" id="accueil" >
             <div class="col-1">
                 <img src="photo\c20dc58b6ff41381845afa2176475e9d.jpg" alt="photo">
             </div>
@@ -47,7 +47,7 @@
             <!------------------------------------Accueil switch------------------------------------------>
     
 
-        <section class="contenue" id="accueil-switch" >
+        <section class="contenue" id="accueil-switch" hidden>
             <header>
                 <div class="container-name">
                     <div class="name">
@@ -62,34 +62,34 @@
                 <nav class="navigation" >
                     <ul class="nav justify-content-center">
                         <li class="nav-item">
-                        <a class="nav-link categorie-pht active" href="#portfolio">Portfolio</a>
+                        <a class="nav-link categorie-pht active"  href="#portfolio">Portfolio</a>
                         </li>
                         <li class="nav-item">
                         <a class="nav-link categorie-pht" href="#studio">Studio</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link categorie-pht" href="#street">Street</a>
+                        <a class="nav-link categorie-pht"  href="#street">Street</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link categorie-pht " href="#portrait">Portrait</a>
+                        <a class="nav-link categorie-pht"   href="#portrait">Portrait</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link categorie-pht " href="#evenement">Evènement</a>
+                            <a class="nav-link categorie-pht"  href="#evenement">Evènement</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link categorie-pht " href="#noir&blanc">Noir & Blanc</a>
+                            <a class="nav-link categorie-pht"  href="#noir&blanc">Noir & Blanc</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#">A Propos</a>
+                            <a class="nav-link infos-propos " href="#a-propos">A Propos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#">Contact</a>
+                            <a class="nav-link infos-contact" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </nav>
             </header>
-            <article>
-                <div class="container-photo mfp-fade" hidden>
+            <article id="photo">
+                <div class="container-photo mfp-fade" >
 
                     <!------------------------------------Script js pour photo----------------------------->
 
@@ -189,10 +189,13 @@
                     <!------------------------------------Fin du script------------------------------------------>
 
                 </div>
+            </article>
 
-                    <!---------------------------------------A propos--------------------------------------------->
+            <article id="a-propos" hidden>
 
-                <div class="container-a-propos" hidden>
+                <!---------------------------------------A propos--------------------------------------------->
+
+                <div class="container-a-propos">
                     <div class="a-propos">
                         <img src="photo\xphotographe.jpg.pagespeed.ic.qJUnzHUWx0.jpg" alt="impossible d'afficher la photo">
                         <div class="description-texte">
@@ -226,7 +229,7 @@
                                     Aut adipisci placeat ab nostrum dolorem At officia nesciunt qui asperiores deleniti ut quidem laboriosam? 
                                     Aut sequi veritatis 33 minima expedita ut dignissimos alias sed dolor pariatur et ipsum nesciunt et consequatur dolorem.
                             </p>
-
+ 
                             <div class="bouton-contact">
                                 <button class="btn-contact btn">
                                 Contact
@@ -237,10 +240,12 @@
                         </div>
                     </div>
                 </div>
-            
+            </article>
+
+            <article class="article-contact" id="contact" hidden>
                 <!------------------------------------Contact------------------------------------>
 
-                <div class="contact">
+                <div class="contact" >
                     <div class="contact-container">
                         <h2>
                             N'HESITEZ PAS A ME CONTACTER
@@ -271,6 +276,14 @@
                                 </div>
                                 <h4>Mail</h4>
                                 <p>Kelly.p@nuage.fr</p>
+                            </div>
+
+                            <div class="contact-item ">
+                                <div class="icon">
+                                    <i class="bi bi-instagram"></i>
+                                </div>
+                                <h4>INSTAGRAM</h4>
+                                <a href=""><p>Kelly.p</p></a>
                             </div>
                         </div>
                     </div>

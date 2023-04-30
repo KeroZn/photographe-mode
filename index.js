@@ -88,5 +88,42 @@ navLinks.forEach(link => {
 });
 
 
-/*-------------------------Footer-----------------------*/
+//----------------------------- changement catégorie--------------------------------------//
+
+
+const contact = document.getElementById('contact');
+const photo = document.getElementById('photo');
+const propos = document.getElementById('a-propos')
+
+
+
+const linkContact = document.querySelector('.infos-contact');
+const linkPropos = document.querySelector('.infos-propos');
+const linkPhotos = document.querySelectorAll('.categorie-pht');
+
+linkContact.addEventListener('click', function(event) {
+  event.preventDefault();
+  contact.hidden = false;
+  photo.hidden = true;
+  propos.hidden = true;
+});
+
+linkPhotos.forEach(function(link) {
+  link.addEventListener('click', function(event) {
+    event.preventDefault();
+    contact.hidden = true;
+    photo.hidden = false;
+    propos.hidden = true;
+  });
+
+  linkPropos.addEventListener('click', function(event) {
+    event.preventDefault();
+    propos.hidden = false;
+    photo.hidden = true;
+    contact.hidden = true;
+  });
+
+});
+
+
 
