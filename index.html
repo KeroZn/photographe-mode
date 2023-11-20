@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="bootstrap.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap" rel="stylesheet">
@@ -24,28 +25,28 @@
     </head>
     <body>
 
-            <!------------------------------------Accueil switch------------------------------------------>
-    
-
-        <section class="contenue" id="accueil-switch">
+            <!------------------------------------header------------------------------------------>
+        <section class="contenue" id="accueil-switch" >
             <header>
+                <div class="follow">
+                    <a href="instagram.fr">+ ME SUIVRE SUR INSTAGRAM</a>
+                </div>
                 <div class="container-name">
                     <div class="name">
                         <h1>
                             Kelly Pastille
                         </h1>
                         <p>
-                            PHOTOGRAPHE & BLOGEUSE
+                            PHOTOGRAPHE PROFESSIONNEL <br>&<br> BLOGEUSE INTERNATIONAL
                         </p>
                     </div>
-                </div>
-                
+                </div>               
                 <nav class="navigation" >   
                     <div class="dropdown">                       
-                        <button class="btn btn-secondary " type="button"  >
-                            <a class="nav-link categorie-pht infos-acceuil active"  href="#acceuil">acceuil</a>
+                        <button class="btn  " type="button"  >
+                            <a class="nav-link  infos-acceuil active"  href="#acceuil">Home</a>
                         </button>                       
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Catégorie Photo
                         </button>
                         <ul class="dropdown-menu">
@@ -67,8 +68,21 @@
                             <li class="nav-item">
                                 <a class="nav-link categorie-pht"  href="#noir&blanc">Noir & Blanc</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link categorie-pht"  href="#">Photo Voyage</a>
+                            </li>
                         </ul>
-                            <button  class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn  " type="button"  >
+                            <a class="nav-link "  href="#">Mes voyages</a>
+                        </button>
+                        <button class="btn  " type="button"  >
+                            <a class="nav-link "  href="#">Astuce Photo</a>
+                        </button>
+                        <button class="btn  " type="button"  >
+                            <a class="nav-link "  href="#">Conseil voyage</a>
+                        </button>
+                       
+                            <button  class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 A propos
                             </button>
                         <ul class="dropdown-menu">
@@ -82,11 +96,62 @@
                     </div>                                
                 </nav>
             </header>
+        </section>
                     <!----------------------------Page d'acceuil----------------------------------->
+        <section class="home" >
             <article id="acceuil">
-fgdfd
-            </article>
-            <article id="photo" hidden>
+                <div class="welcome">
+                    <div class="baniere">
+                        <img src="adobestock-196990370.jpg" alt="" class="photo-baniere">
+                    </div>
+                    <div class="welcome">
+                        <h2>Blog et Portfolio</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            <br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                           </p>
+                    </div>
+                </div>
+                <span> <!---séparateur-----------> </span>
+
+                <div class="container-one">
+                  <div class="one">
+                    <div class="on-one">
+                          <p>
+                           <h2> A La Une :</h2>                          
+                        </p>
+                    </div>      
+                  </div>
+                </div>
+                <div class="container-last">
+                    <div class="last">
+                        <h2> Les Derniers Articles</h2>
+                        <div class="article">                          
+                            <a href="">
+                             <img src="" alt="" class="pht-art">                        
+                            <h3 class="title-art"></h3>
+                            </a>
+                        </div>
+                        <div class="article">
+                            <a href="">
+                                <img src="" alt="" class="pht-art">                        
+                               <h3 class="title-art"></h3>
+                               </a>
+                        </div>
+                        <div class="article">
+                            <a href="">
+                                <img src="" alt="" class="pht-art">                        
+                               <h3 class="title-art"></h3>
+                               </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </article>    
+        </section>  
+        <section class="picture" id="photo" hidden>
+            <article>
                 <div class="container-photo mfp-fade" >
 
                     <!------------------------------------Script js pour photo----------------------------->
@@ -188,8 +253,9 @@ fgdfd
 
                 </div>
             </article>
-
-            <article id="a-propos" hidden>
+        </section>
+        <section class="about" id="a-propos" hidden>
+            <article>
 
                 <!---------------------------------------A propos--------------------------------------------->
 
@@ -239,8 +305,9 @@ fgdfd
                     </div>
                 </div>
             </article>
-
-            <article class="article-contact" id="contact" hidden>
+        </section>
+        <section class="request" id="contact" hidden>
+            <article class="article-contact" >
                 <!------------------------------------Contact------------------------------------>
 
                 <div class="contact" >
@@ -288,6 +355,8 @@ fgdfd
                 </div>
             </article>
         </section>
+            
+       
 
         
             
@@ -298,10 +367,12 @@ fgdfd
 
 
         
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
         <script src="index.js"></script>
         <script src="bootstrap.min.js"></script>
         <script src="jquery.magnific-popup.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+      
     </body>
 </html

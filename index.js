@@ -69,51 +69,48 @@ navLinks.forEach(link => {
 
 //----------------------------- changement catégorie--------------------------------------//
 
+const sections = {
+  contact: document.getElementById('contact'),
+  photo: document.getElementById('photo'),
+  propos: document.getElementById('a-propos'),
+  accueil: document.getElementById('acceuil'),
+};
 
-const contact = document.getElementById('contact');
-const photo = document.getElementById('photo');
-const propos = document.getElementById('a-propos')
-const accueil = document.getElementById('acceuil')
+const links = {
+  contact: document.querySelector('.infos-contact'),
+  propos: document.querySelector('.infos-propos'),
+  acceuil: document.querySelector('.infos-acceuil'),
+  photos: document.querySelectorAll('.categorie-pht'),
+};
 
-const linkContact = document.querySelector('.infos-contact');
-const linkPropos = document.querySelector('.infos-propos');
-const linkAcceuil = document.querySelector('.infos-acceuil');
-const linkPhotos = document.querySelectorAll('.categorie-pht');
+function showSection(sectionId) {
+  for (const key in sections) {
+    sections[key].hidden = key !== sectionId;
+  }
+}
 
-linkContact.addEventListener('click', function(event) {
+links.contact.addEventListener('click', function (event) {
   event.preventDefault();
-  contact.hidden = false;
-  photo.hidden = true;
-  propos.hidden = true;
-  accueil.hidden = true;
+  showSection('contact');
 });
 
-linkPhotos.forEach(function(link) {
-  link.addEventListener('click', function(event) {
+links.photos.forEach(function (link) {
+  link.addEventListener('click', function (event) {
     event.preventDefault();
-    contact.hidden = true;
-    photo.hidden = false;
-    propos.hidden = true;
-    accueil.hidden = true;
+    showSection('photo');
   });
+});
 
-  linkPropos.addEventListener('click', function(event) {
-    event.preventDefault();
-    propos.hidden = false;
-    photo.hidden = true;
-    contact.hidden = true;
-    accueil.hidden = true;
-  });
+links.propos.addEventListener('click', function (event) {
+  event.preventDefault();
+  showSection('propos');
+});
 
-  linkAcceuil.addEventListener('click', function(event) {
-    event.preventDefault();
-    propos.hidden = true;
-    photo.hidden = true;
-    contact.hidden = true;
-    accueil.hidden = false;
-  });
-
+links.acceuil.addEventListener('click', function (event) {
+  event.preventDefault();
+  showSection('accueil');
 });
 
 
+//----------------------------------
 
