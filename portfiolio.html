@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+        <link rel="stylesheet" href="magnific-popup.css">
+        
+        
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="follow">
+            <a href="instagram.fr">+ ME SUIVRE SUR INSTAGRAM</a>
+        </div>
+        <div class="container-name">
+            <div class="name">
+                <h1>
+                    Kelly Pastille
+                </h1>
+                <p>
+                    PHOTOGRAPHE PROFESSIONNEL <br>&<br> BLOGEUSE INTERNATIONAL
+                </p>
+            </div>
+        </div>               
+        <nav class="navigation" >   
+            <div class="dropdown">                       
+                <button class="btn  " type="button"  >
+                    <a class="nav-link  infos-acceuil active"  href="index.html">Home</a>
+                </button>                       
+                <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Catégorie Photo
+                </button>
+                <ul class="dropdown-menu">
+                    <li class="nav-item">
+                        <a class="nav-link categorie-pht"  href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link categorie-pht" href="#studio">Studio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link categorie-pht"  href="#street">Street</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link categorie-pht"   href="#portrait">Portrait</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link categorie-pht"  href="#evenement">Evènement</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link categorie-pht"  href="#noir&blanc">Noir & Blanc</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link categorie-pht"  href="#">Photo Voyage</a>
+                    </li>
+                </ul>
+                <button class="btn  " type="button"  >
+                    <a class="nav-link "  href="voyage.html">Mes voyages</a>
+                </button>
+                <button class="btn  " type="button"  >
+                    <a class="nav-link "  href="astuce.html">Astuce Photo</a>
+                </button>
+                <button class="btn  " type="button"  >
+                    <a class="nav-link "  href="conseil.html">Conseil voyage</a>
+                </button>           
+                    <button  class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        A propos
+                    </button>
+                <ul class="dropdown-menu">
+                    <li class="nav-item">
+                        <a class="nav-link infos-propos " href="a-propos">A Propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link infos-contact" href="contact">Contact</a>
+                    </li>
+                </ul>
+            </div>                                
+        </nav>
+    </header>
+    <article>
+        <div class="container-photo mfp-fade" >
+
+            <!------------------------------------Script js pour photo----------------------------->
+
+            <script>
+                
+              const photos = [      
+                {
+                    src: "photo\\☆ Alternative Purple ☆彡 _ Photos.jpg",
+                    tags: ["portrait","studio","portfolio"]
+                },
+                {
+                    src:"photo\\c20dc58b6ff41381845afa2176475e9d.jpg",
+                    tags: ["portrait", "studio", "portfolio"]
+                } , 
+                {
+                    src: "photo\\ca14cf49-7022-4169-b97d-d983ae5f4ba3.jpg",
+                    tags: [ "noir&blanc","portfolio"]    
+                }  ,
+                {
+                    src:"photo\\Creative Portrait Photography, Grunge Glam Photography, Smokey Black and White Portrait.png",
+                    tags: [ "noir&blanc", "portrait", "portfolio"]  
+                },
+                {
+                    src:"photo\\e4173d97420609.5ec4aee32b4a6.jpg",
+                    tags: [ "noir&blanc", "street", "portfolio"]
+                } ,
+                {
+                    src:"photo\\hey don't play cello you look so yellow.jpg", 
+                    tags: ["noir&blanc", "portrait", "portfolio", "studio"]
+                },
+                {
+                    src:"photo\\P34124.jpg", 
+                    tags:["noir&blanc", "street", "portfolio"]
+                }  ,  
+                {
+                    src:"photo\\pensive-asian-woman-black-hat-looking-camera-studio-shot-glamorous-japanese-model-isolated-beige-background_197531-14544.jpg", 
+                    tags: [, "studio", "portfolio"]
+                } ,   
+                {
+                    src:"photo\\unnamed.jpg",
+                    tags:["studio", "portfolio"]
+                },
+                {
+                    src:"photo\\World in Black and white.jpg",
+                    tags: ["portrait","noir&blanc","portfolio","studio"]
+                },
+                {
+                    src:"photo\\20210619-sonia-et-roderau-0085_3_274011-165814883587377.jpeg", 
+                    tags:[ "evènement","portfolio"]
+                }  ,   
+                {
+                    src: "photo\\pexels-photo-1456613.jpg",
+                    tags:[ "evènement", "portfolio"]
+                },
+                {
+                    src: "photo\\téléchargement (1).jpg",
+                    tags:["portfolio"]
+                },    
+                {
+                    src:"photo\\Exhale by Gracie Bialecki.jpg",
+                    tags: ["portfolio"]
+                } ,     
+                {
+                    src: "photo\\stock-photo-4426346.jpg", 
+                    tags: ["noir&blanc", "street", "portfolio"]
+                } ,    
+                {
+                    src:"photo\\téléchargement (2).jpg", 
+                    tags: ["noir&blanc", "studio", "portfolio"]
+                } ,    
+                {
+                    src: "photo\\mariage_.jpg",
+                    tags: ["evènement", "portfolio"]
+                }   ,
+                {
+                    src:"photo\\téléchargement (3).jpg",
+                    tags: ["portrait", "portfolio"]
+                } ,  
+                {
+                    src: "photo\\20 Enchanting Wedding Photo Ideas for Woodland Brides - Tulle & Chantilly Wedding Blog.jpg",
+                    tags: [ "portfolio"]
+                }    ,
+                {
+                    src:  "photo\\photographe-mariage-auvergne-aynaphotos-014.jpg",   
+                    tags: ["noir&blanc",  "portfolio", "evènement"]
+                } 
+             ];
+             for (let i = 0; i < photos.length; i++) {
+                const { src, tags } = photos[i];
+                const tagString = tags.join(" "); // Convertir les tags en une chaîne séparée par des espaces
+                 document.write(`<a href="${src}" class="link-pht"><img src="${src}" alt="impossible d'afficher la photo" data-tags="${tagString}"></a>`
+                 );
+            }
+          
+            </script>
+
+            <!------------------------------------Fin du script------------------------------------------>
+
+        </div>
+    </article>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="index.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="jquery.magnific-popup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+</body>
+</html>
