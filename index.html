@@ -114,76 +114,21 @@
                                <h3 class="title-art"></h3>
                                </a>
                         </div>
-                        <div class="article">
+                        <div class="article ">
                             <a href="">
                                 <img src="" alt="" class="pht-art">                        
                                <h3 class="title-art"></h3>
                                </a>
                         </div>
+                        <div class="home-container"></div>
+
 
                     </div>
                 </div>
 
             </article>    
         </section>  
-        
-        
-            
-       
-
-        
-            
-            
-
-        <script>
-
-        // Fonction pour créer une carte de sujet
-        function createTopicCard(topic) {
-            const card = document.createElement("div");
-            card.classList.add("card");
-            card.innerHTML = `<h2>${topic.title}</h2><p>${topic.content}</p>`;
-            card.addEventListener("click", () => {
-                // Redirigez l'utilisateur vers la page du sujet complet ou effectuez toute autre action souhaitée
-                alert(`Ouvrir le sujet : ${topic.title}`);
-            });
     
-            return card;
-        }
-    
-        // Fonction pour afficher les sujets dans une section spécifique depuis le serveur
-        function displayTopics(containerId) {
-            fetch(`/topics/${containerId}`)
-                .then(response => response.json())
-                .then(data => {
-                    const topicsContainer = document.getElementById(containerId);
-    
-                    console.log(`Affichage des sujets dans la section ${containerId}`);
-    
-                    // Supprimez les enfants existants pour éviter la duplication
-                    while (topicsContainer.firstChild) {
-                        topicsContainer.removeChild(topicsContainer.firstChild);
-                    }
-    
-                    // Créez une carte pour chaque sujet et ajoutez-la à la section
-                    data.forEach((topic) => {
-                        const card = createTopicCard(topic);
-                        topicsContainer.appendChild(card);
-                    });
-    
-                    console.log(`Sujets affichés dans la section ${containerId}`);
-                })
-                .catch(error => {
-                    console.error(`Erreur lors de la récupération des sujets : ${error}`);
-                });
-        }
-    
-        // Appeler la fonction pour afficher les sujets lors du chargement de la page
-        window.onload = function () {
-            displayTopics("voyage-topics-container");
-            displayTopics("photo-tips-container");
-            displayTopics("voyage-advice-container");
-        };
-    </script>
 
         <script src="serveur.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>

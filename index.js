@@ -134,3 +134,38 @@ window.onload = function () {
   displayTopics("photo-tips-container");
   displayTopics("voyage-advice-container");
 };
+
+
+
+
+// Fonction pour afficher les derniers sujets de chaque conteneur sur la page d'accueil
+function displayLatestTopicsOnHomePage() {
+  const homeContainer = document.getElementById("home-container");
+
+  // Vérifiez si le conteneur de la page d'accueil a été trouvé dans le document
+  if (!homeContainer) {
+    console.error("Le conteneur de la page d'accueil n'a pas été trouvé.");
+    return;
+  }
+
+  // Ajoutez les derniers sujets de chaque conteneur à la page d'accueil
+  Object.keys(topicsData).forEach((containerId) => {
+    const data = topicsData[containerId] || [];
+    const latestTopic = data[data.length - 1]; // Récupérez le dernier sujet
+
+    if (latestTopic) {
+      const card = createTopicCard(latestTopic);
+      homeContainer.appendChild(card);
+    }
+  });
+
+  console.log("Derniers sujets affichés sur la page d'accueil");
+}
+
+// Appeler la fonction pour afficher les sujets sur la page d'accueil lors du chargement de la page
+window.onload = function () {
+  displayTopics("voyage-topics-container");
+  displayTopics("photo-tips-container");
+  displayTopics("voyage-advice-container");
+  displayLatestTopicsOnHomePage(); // Ajoutez cette ligne pour afficher les derniers sujets sur la page d'accueil
+};
