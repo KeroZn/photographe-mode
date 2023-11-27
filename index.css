@@ -99,7 +99,7 @@ nav .dropdown-menu{
 
 
 
-/*******************baniere*************************/
+/*******************home*************************/
 
 .home .baniere{
     background-color: rebeccapurple;
@@ -170,27 +170,10 @@ nav .dropdown-menu{
     text-align: center;  
 }
 
- .container-last .article{
-    height: 350px;
-    width: 350px;
-    display: inline-flex;
-    overflow: hidden;   
+#last  {
+    display: flex;
 }
 
-.container-last .article .pht-art{
-    height: 70%;
-    width: 100%;
-}
-
-.container-last .article a{
-    text-decoration: none;
-}
-.container-last .article .title-art{
-    color: black;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: bold;
-}
 
 /*---------------les photo--------------------------*/
 

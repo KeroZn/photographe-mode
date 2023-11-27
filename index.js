@@ -137,10 +137,9 @@ window.onload = function () {
 
 
 
-
-// Fonction pour afficher les derniers sujets de chaque conteneur sur la page d'accueil
-function displayLatestTopicsOnHomePage() {
-  const homeContainer = document.getElementById("home-container");
+// Fonction pour dupliquer le dernier sujet de chaque conteneur sur la page d'accueil
+function duplicateLatestTopicsOnHomePage() {
+  const homeContainer = document.getElementById("last");
 
   // Vérifiez si le conteneur de la page d'accueil a été trouvé dans le document
   if (!homeContainer) {
@@ -148,7 +147,7 @@ function displayLatestTopicsOnHomePage() {
     return;
   }
 
-  // Ajoutez les derniers sujets de chaque conteneur à la page d'accueil
+  // Dupliquez le dernier sujet de chaque conteneur sur la page d'accueil
   Object.keys(topicsData).forEach((containerId) => {
     const data = topicsData[containerId] || [];
     const latestTopic = data[data.length - 1]; // Récupérez le dernier sujet
@@ -159,13 +158,13 @@ function displayLatestTopicsOnHomePage() {
     }
   });
 
-  console.log("Derniers sujets affichés sur la page d'accueil");
+  console.log("Derniers sujets existants dupliqués sur la page d'accueil");
 }
 
-// Appeler la fonction pour afficher les sujets sur la page d'accueil lors du chargement de la page
+// Appeler la fonction pour dupliquer les derniers sujets existants sur la page d'accueil lors du chargement de la page
 window.onload = function () {
   displayTopics("voyage-topics-container");
   displayTopics("photo-tips-container");
   displayTopics("voyage-advice-container");
-  displayLatestTopicsOnHomePage(); // Ajoutez cette ligne pour afficher les derniers sujets sur la page d'accueil
+  duplicateLatestTopicsOnHomePage(); // Ajoutez cette ligne pour dupliquer les derniers sujets existants sur la page d'accueil
 };
