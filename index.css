@@ -9,6 +9,9 @@ html body {
     margin: 0;
 }
 
+.responsive .btn{
+    visibility: hidden;
+}
 
   
 /*---------------------------header--------------------------------*/
@@ -146,16 +149,17 @@ nav .dropdown-menu{
 
 .home .one{
     background-color: white;
-    width: 500px;
-    height: 250px;
+    width: 30vw;
+    height: 15vw;
     margin-left: 20vw;
-    display: flex;
+    display: flex;  
     top: 50%;
     transform: translateY(-50%);
     flex-direction: column;
     font-size: 14px;
     position: absolute;
     padding: 30px; 
+
 }
 .home h2{
     font-weight: bold;
@@ -408,12 +412,43 @@ box-shadow: inset 0 0 0 0 #e0d20e;
     background-color: #f0f0f0;
 }
 
-/*********************Connexion*************************/
-
 form{
     margin-top: 300px;
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .responsive .btn {
+        visibility: visible;
+        font-weight: bold;
+    }
+    .responsive .btn:hover {
+        background-color: #b56576;
+    }
+    .categorie-pht:hover, .infos-propos:hover, .infos-contact:hover{
+        background-color: #b56576;
+    }
+    
+    .n-responsive {
+        display: none;
+    }
+
+    article .container-photo img{
+        max-width: 50vw;
+        max-height: 70vw;
+
+    }
+
+    .contact .contact-container .contact-list{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+
+
 }
